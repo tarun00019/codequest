@@ -1,8 +1,8 @@
 // File: client/src/pages/SocialFeed/SocialFeed.js
 import React from 'react';
-import PostForm from '../../components/PostForm';   
-import Feed from '../../components/Feed';       
-import LeftSidebar from '../../Comnponent/Leftsidebar/Leftsidebar'; 
+import PostForm from '../../components/PostForm';
+import Feed from '../../components/Feed';
+import LeftSidebar from '../../components/Leftsidebar/Leftsidebar'; 
 
 const SocialFeed = () => {
   return (
