@@ -1,5 +1,4 @@
 import React, { useEffect, useCallback } from 'react';
-import React, { useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from "react-redux"
 import bars from '../../assets/bars-solid.svg'
