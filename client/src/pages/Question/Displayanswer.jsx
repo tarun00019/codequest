@@ -1,7 +1,7 @@
 import React from 'react'
 import moment from 'moment'
 import { Link,useParams } from 'react-router-dom'
-import Avatar from '../../Comnponent/Avatar/Avatar'
+import Avatar from '../../components/Avatar/Avatar'
 import { useDispatch ,useSelector} from 'react-redux'
 import { deleteanswer } from '../../action/question'
 const Displayanswer = ({ question, handleshare }) => {

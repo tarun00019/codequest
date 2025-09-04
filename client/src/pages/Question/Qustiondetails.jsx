@@ -4,7 +4,7 @@ import copy from "copy-to-clipboard"
 import upvote from "../../assets/sort-up.svg"
 import downvote from "../../assets/sort-down.svg"
 import './Question.css'
-import Avatar from '../../Comnponent/Avatar/Avatar'
+import Avatar from '../../components/Avatar/Avatar'
 import Displayanswer from './Displayanswer'
 import { useSelector, useDispatch } from "react-redux"
 import { Link ,useNavigate,useLocation,useParams} from 'react-router-dom'

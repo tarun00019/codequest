@@ -1,7 +1,7 @@
 import React from 'react'
-import Leftsidebar from '../../Comnponent/Leftsidebar/Leftsidebar'
-import Rightsidebar from '../../Comnponent/Rightsidebar/Rightsidebar'
-import Homemainbar from '../../Comnponent/Homemainbar/homemainbar'
+import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
+import Rightsidebar from '../../components/Rightsidebar/Rightsidebar'
+import Homemainbar from '../../components/Homemainbar/homemainbar'
 import '../../App.css'
 
 const Home = ({slidein}) => {

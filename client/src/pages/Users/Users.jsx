@@ -1,5 +1,5 @@
 import React from 'react'
-import Leftsidebar from '../../Comnponent/Leftsidebar/Leftsidebar'
+import Leftsidebar from '../../components/Leftsidebar/Leftsidebar'
 import './Users.css'
 import Userslist from './Userslist'
 const Users = ({slidein}) => {
