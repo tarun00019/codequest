@@ -7,7 +7,7 @@ const Feed = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const response = await fetch('/api/posts/feed');
+                const response = await fetch('https://codequest-backend-xotm.onrender.com/api/posts/feed');
                 const data = await response.json();
                 setPosts(data);
             } catch (error) {

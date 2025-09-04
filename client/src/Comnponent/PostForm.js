@@ -11,7 +11,7 @@ const PostForm = () => {
         const userId = 'PASTE_A_REAL_USER_ID_HERE';
 
         try {
-            const response = await fetch('/api/posts', {
+            const response = await fetch('https://codequest-backend-xotm.onrender.com/api/posts', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId, content }),
