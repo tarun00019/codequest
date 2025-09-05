@@ -1,35 +1,36 @@
 // File: client/src/components/Leftsidebar/Leftsidebar.jsx
 
-// STEP 1: We've combined the two React imports into one correct line.
 import React, { useState } from 'react';
 import './Leftsidebar.css';
 import { NavLink } from 'react-router-dom';
 import Globe from "../../assets/Globe.svg";
 
-// File: client/src/components/Leftsidebar/Leftsidebar.jsx
-
-// ... (your imports and function definition up here) ...
-
 const Leftsidebar = ({ slidein }) => {
-    // ... (your styles and useState hook up here) ...
+    // These are the missing style definitions
+    const slideinstyle = {
+        transform: "translateX(0%)",
+    };
+    const slideoutstyle = {
+        transform: "translateX(-100%)",
+    };
+
+    // This is the state for your collapsible menu
     const [isPublicMenuOpen, setIsPublicMenuOpen] = useState(true);
 
     return (
+        // This line needs the style variables to work
         <div className="left-sidebar" style={slidein ? slideinstyle : slideoutstyle}>
             <nav className='side-nav'>
-                {/* Home button remains the same */}
                 <button className="nav-btnn">
                     <NavLink to='/' className="side-nav-links" activeclassname='active'>
                         <p>Home</p>
                     </NavLink>
                 </button>
 
-                {/* MOVED: The PUBLIC button is now here, right below Home */}
                 <button type="button" className='nav-btnn' onClick={() => setIsPublicMenuOpen(!isPublicMenuOpen)}>
                     <p>PUBLIC</p>
                 </button>
 
-                {/* This div now ONLY contains the collapsible items */}
                 <div className="side-nav-div">
                     {isPublicMenuOpen && (
                         <>
